@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Places</title>
+  </head>
+  <script src="js/jquery-1.11.3.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <body>
+
+    <div class="container">
+      <h1 class="page-header text-center">My Travel Book</h1>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="text-center">Add place:</h3>
+
+          <form id="new-place" class="form-horizontal">
+            <div class="form-group">
+              <label for="new-location" class="col-sm-3 control-label">Location</label>
+              <div class="col-sm-9">
+                <input type="text" id="new-location" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="new-time" class="col-sm-3 control-label">Year</label>
+              <div class="col-sm-9">
+                <input type="text" id="new-time" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group new-landmark-wrapper">
+              <label for="new-landmark" class="col-sm-3 control-label">Landmark <span id="first-landmark-label"></span></label>
+              <div class="col-sm-9">
+                <input type="text" class="new-landmark form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-9 col-sm-offset-3">
+                <div class="extra-landmark-wrapper text-center">
+                  <span id="extra-landmark" class="text-small linkify add">-Add landmark-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group new-note-wrapper">
+              <label for="new-note" class="col-sm-3 control-label">Note <span id="first-note-label"></span></label>
+              <div class="col-sm-9">
+                <input type="text" class="new-note form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-9 col-sm-offset-3">
+                <div class="extra-note-wrapper text-center">
+                  <span id="extra-note" class="text-small linkify add">-Add note-</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="pull-right btn btn-default">Add place</button>
+            <span id="reset" class="pull-right btn btn-warning">Reset</span>
+
+          </form>
+        </div>
+
+        <div class="col-md-4 col-md-offset-1">
+          <h3 class="text-center">Places:</h3>
+
+          <ul id="places-list">
+
+          </ul>
+
+          <div id="place">
+            <h5>Location: <span id="location"></span></h5>
+            <h5>Year: <span id="year"></span></h5>
+
+            <h5>Landmarks</h5>
+            <ul class="landmarks">
+
+            </ul>
+
+            <h5>Notes:</h5>
+            <ul class="notes">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

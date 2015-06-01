@@ -1,0 +1,44 @@
+body {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.page-header {
+  margin-bottom: 50px;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 50px 0;
+  background: rgba(255,255,255,.7);
+}
+
+#place {
+  display:none;
+}
+
+.text-small {
+  font-size: 10px;
+}
+
+.linkify {
+  color: blue;
+}
+
+.linkify:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.add {
+  position: relative;
+  top: -15px;
+}
+
+#reset {
+  margin-right: 10px;
+}
+
+#places-list > li {
+  list-style-type: none;
+}
